@@ -1,0 +1,19 @@
+# IDE
+.idea/
+*.iml
+
+# Build output
+target/
+build/
+out/
+bin/
+
+# Version control
+.git/
+
+# Logs
+*.log
+
+# Stray source backup archives (not the current source, kept locally only)
+BackupOLDSOURCE.zip
+newnations.zip

@@ -1,0 +1,184 @@
+# ╔═══════════════════════════════════════════════════════════════╗
+# ║              NATIONSPLUS v1.0.0                              ║
+# ║   Towns · Nations · Dynmap · War · Marriage                  ║
+# ║              by ISekai · Discord: akumasekai                 ║
+# ╚═══════════════════════════════════════════════════════════════╝
+
+# ── General Settings ──
+general:
+  # Worlds where town/nation creation is allowed
+  allowed-worlds:
+    - "earth"
+  # Whether deletion commands work in any world
+  delete-any-world: true
+  # Allow color codes in town/nation names
+  allow-color-codes: false
+  # Name length constraints
+  min-name-length: 3
+  max-name-length: 24
+  # Blacklisted names (case-insensitive)
+  blacklisted-names:
+    - "admin"
+    - "server"
+    - "null"
+    - "undefined"
+    - "console"
+
+# ── Economy (Vault) ──
+economy:
+  town-creation-cost: 5000.0
+  nation-creation-cost: 150000.0
+  town-rename-cost: 2500.0
+  nation-rename-cost: 10000.0
+  claim-cost-per-chunk: 500.0
+  free-claim-blocks: 10
+  divorce-cost: 1000.0
+  war-declaration-cost: 25000.0
+  # Tax settings
+  tax:
+    enabled: true
+    interval-hours: 24
+    town-tax-per-citizen: 50.0
+    nation-tax-per-town: 500.0
+
+# ── Town Settings ──
+town:
+  max-members: 50
+  max-claims: 500
+  claim-tool: GOLDEN_SHOVEL
+  spawn-cooldown: 5
+  # Default town laws (for non-members)
+  default-laws:
+    pvp: false
+    mob-spawning: true
+    block-break: false
+    block-place: false
+    interact: false
+    explosion-damage: false
+
+# ── Nation Settings ──
+nation:
+  max-towns: 20
+  spawn-cooldown: 10
+
+# ── War Settings ──
+war:
+  grace-period-hours: 24
+  max-duration-hours: 168
+  reminder-interval-hours: 24
+  allow-block-break-after-grace: true
+  allow-pvp-after-grace: true
+  allow-explosions-after-grace: false
+  # Post-war settings
+  post-war:
+    territory-transfer-enabled: false
+    tribute-payment-enabled: true
+    tribute-percentage: 10.0
+    occupation-duration-hours: 48
+
+# ── Marriage Settings ──
+marriage:
+  proposal-timeout-seconds: 120
+  divorce-cost: 1000.0
+  reproduce-cooldown-days: 7
+  reproduce-claim-bonus: 2
+  allowed-genders:
+    - "male"
+    - "female"
+    - "other"
+    - "prefer-not"
+  default-allow-same-gender-marriage: true
+  # Spouse action effects
+  spouse-actions:
+    hug:
+      enabled: true
+      particle: HEART
+      cooldown-seconds: 30
+    kiss:
+      enabled: true
+      particle: HEART
+      cooldown-seconds: 60
+    reproduce:
+      enabled: true
+      particle: VILLAGER_HAPPY
+      sound: ENTITY_EXPERIENCE_ORB_PICKUP
+
+# ── Dynmap Settings ──
+dynmap:
+  enabled: true
+  layer-towns:
+    name: "Towns"
+    show-by-default: true
+    priority: 10
+  layer-nations:
+    name: "Nations"
+    show-by-default: true
+    priority: 11
+  layer-war:
+    name: "War Zones"
+    show-by-default: false
+    priority: 12
+  border-darkness-factor: 0.6
+  fill-opacity: 0.35
+  border-opacity: 0.8
+  border-weight: 3
+  default-fill-color: "#44AA44"
+  war-fill-color: "#FF4444"
+  # Icons
+  capital-icon: "king"
+  capital-icon-size: 32
+  town-icon: "flag"
+  town-icon-size: 24
+  tooltip-format: "<b>{name}</b><br>Leader: {leader}<br>Population: {population}<br>Bank: ${balance}"
+
+# ── Roles (display names with smallcaps) ──
+roles:
+  king: "&#FFD700&l♔ ᴋɪɴɢ"
+  queen: "&#FFD700&l♛ ǫᴜᴇᴇɴ"
+  right-hand: "&#44FF44&l★ ʀɪɢʜᴛ ʜᴀɴᴅ"
+  left-hand: "&#AAAAFF&l★ ʟᴇꜰᴛ ʜᴀɴᴅ"
+  commander: "&#FF4444&l⚔ ᴄᴏᴍᴍᴀɴᴅᴇʀ"
+  lieutenant: "&#44AAFF&l⚑ ʟɪᴇᴜᴛᴇɴᴀɴᴛ"
+  courtier: "&#FFAA44&l◆ ᴄᴏᴜʀᴛɪᴇʀ"
+  citizen: "&#AAAAAA● ᴄɪᴛɪᴢᴇɴ"
+
+# ── GUI Settings ──
+gui:
+  town:
+    title: "&#333333&l◈ &#FFD700ᴛᴏᴡɴ ᴍᴀɴᴀɢᴇʀ &#333333◈"
+    rows: 6
+    border-material: GRAY_STAINED_GLASS_PANE
+  nation:
+    title: "&#333333&l◈ &#4488FF&lɴᴀᴛɪᴏɴ ᴍᴀɴᴀɢᴇʀ &#333333◈"
+    rows: 6
+    border-material: BLUE_STAINED_GLASS_PANE
+  admin:
+    title: "&#FF4444&l◈ &#FFD700ᴇᴀʀᴛʜ ᴀᴅᴍɪɴ &#FF4444◈"
+    rows: 6
+    border-material: RED_STAINED_GLASS_PANE
+  member-list:
+    title: "&#333333◈ &#AAAAAAᴍᴇᴍʙᴇʀs &#333333◈"
+    rows: 6
+  role-select:
+    title: "&#333333◈ &#FFD700sᴇʟᴇᴄᴛ ʀᴏʟᴇ &#333333◈"
+    rows: 2
+  settings:
+    title: "&#333333◈ &#44FF44ᴛᴏᴡɴ ʟᴀᴡs &#333333◈"
+    rows: 4
+  # Pagination
+  next-page-material: ARROW
+  next-page-name: "&#44FF44► ɴᴇxᴛ ᴘᴀɢᴇ"
+  prev-page-material: ARROW
+  prev-page-name: "&#FF4444◄ ᴘʀᴇᴠ ᴘᴀɢᴇ"
+  filler-material: BLACK_STAINED_GLASS_PANE
+  filler-name: " "
+
+# ── Anvil GUI ──
+anvil:
+  input-item: MAP
+  input-name: "&#AAAAAA✎ ᴛʏᴘᴇ ʜᴇʀᴇ"
+  confirm-item: EMERALD
+  confirm-name: "&#44FF44✔ ᴄᴏɴꜰɪʀᴍ"
+  cancel-item: BARRIER
+  cancel-name: "&#FF4444✖ ᴄᴀɴᴄᴇʟ"
+  delete-confirm-text: "DELETE"

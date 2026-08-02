@@ -1,0 +1,138 @@
+# ╔═══════════════════════════════════════════════════════════╗
+# ║           NATIONSPLUS MESSAGES v1.0.0                    ║
+# ║   All user-visible text — fully customizable             ║
+# ╚═══════════════════════════════════════════════════════════╝
+# Placeholders: {player}, {town}, {nation}, {balance}, {cost},
+#   {amount}, {role}, {target}, {spouse}, {gender}, {time}
+
+prefix: "&#333333[&#FFD700ɴᴀᴛɪᴏɴsᴘʟᴜs&#333333] &#AAAAAA"
+
+# ── Town Messages ──
+town:
+  created: "&aᴛᴏᴡɴ &f{town} &aʜᴀs ʙᴇᴇɴ ᴄʀᴇᴀᴛᴇᴅ! &7(ᴄᴏsᴛ: ${cost})"
+  deleted: "&cᴛᴏᴡɴ &f{town} &cʜᴀs ʙᴇᴇɴ ᴅᴇʟᴇᴛᴇᴅ."
+  invited: "&eʏᴏᴜ ʜᴀᴠᴇ ʙᴇᴇɴ ɪɴᴠɪᴛᴇᴅ ᴛᴏ &f{town}&e! ᴜsᴇ &f/town accept &eᴏʀ &f/town deny"
+  invite-sent: "&aɪɴᴠɪᴛᴇ sᴇɴᴛ ᴛᴏ &f{player}&a."
+  joined: "&a{player} &aʜᴀs ᴊᴏɪɴᴇᴅ &f{town}&a!"
+  left: "&c{player} &cʜᴀs ʟᴇꜰᴛ &f{town}&c."
+  kicked: "&c{player} &cʜᴀs ʙᴇᴇɴ ᴋɪᴄᴋᴇᴅ ꜰʀᴏᴍ &f{town}&c."
+  spawn-set: "&aᴛᴏᴡɴ sᴘᴀᴡɴ sᴇᴛ!"
+  spawn-teleport: "&aᴛᴇʟᴇᴘᴏʀᴛɪɴɢ ᴛᴏ ᴛᴏᴡɴ sᴘᴀᴡɴ..."
+  role-changed: "&a{player}&a's ʀᴏʟᴇ ᴄʜᴀɴɢᴇᴅ ᴛᴏ &f{role}&a."
+  deposit: "&a${amount} &aᴅᴇᴘᴏsɪᴛᴇᴅ. &7ʙᴀɴᴋ: ${balance}"
+  withdraw: "&a${amount} &aᴡɪᴛʜᴅʀᴀᴡɴ. &7ʙᴀɴᴋ: ${balance}"
+  law-changed: "&a{setting} sᴇᴛ ᴛᴏ &f{value}&a."
+  color-changed: "&aᴛᴏᴡɴ ᴄᴏʟᴏʀ sᴇᴛ ᴛᴏ {color}&a!"
+  renamed: "&aᴛᴏᴡɴ ʀᴇɴᴀᴍᴇᴅ ꜰʀᴏᴍ &f{old} &aᴛᴏ &f{town}&a! &7(ᴄᴏsᴛ: ${cost})"
+
+# ── Nation Messages ──
+nation:
+  created: "&aɴᴀᴛɪᴏɴ &f{nation} &aʜᴀs ʙᴇᴇɴ ꜰᴏᴜɴᴅᴇᴅ! &7(ᴄᴏsᴛ: ${cost})"
+  deleted: "&cɴᴀᴛɪᴏɴ &f{nation} &cʜᴀs ꜰᴀʟʟᴇɴ."
+  town-invited: "&eᴛᴏᴡɴ &f{town} &eʜᴀs ʙᴇᴇɴ ɪɴᴠɪᴛᴇᴅ ᴛᴏ &f{nation}&e."
+  town-joined: "&aᴛᴏᴡɴ &f{town} &aʜᴀs ᴊᴏɪɴᴇᴅ &f{nation}&a!"
+  town-kicked: "&cᴛᴏᴡɴ &f{town} &cʜᴀs ʙᴇᴇɴ ᴋɪᴄᴋᴇᴅ ꜰʀᴏᴍ &f{nation}&c."
+  spawn-set: "&aɴᴀᴛɪᴏɴ sᴘᴀᴡɴ sᴇᴛ!"
+  spawn-teleport: "&aᴛᴇʟᴇᴘᴏʀᴛɪɴɢ ᴛᴏ ɴᴀᴛɪᴏɴ sᴘᴀᴡɴ..."
+  renamed: "&aɴᴀᴛɪᴏɴ ʀᴇɴᴀᴍᴇᴅ ꜰʀᴏᴍ &f{old} &aᴛᴏ &f{nation}&a! &7(ᴄᴏsᴛ: ${cost})"
+
+# ── Claim Messages ──
+claim:
+  claimed: "&aᴄʜᴜɴᴋ ᴄʟᴀɪᴍᴇᴅ! &7({x}, {z}) &7[{used}/{max}]"
+  unclaimed: "&cᴄʜᴜɴᴋ ᴜɴᴄʟᴀɪᴍᴇᴅ. &7({x}, {z})"
+  no-claims-left: "&cɴᴏ ᴄʟᴀɪᴍ ʙʟᴏᴄᴋs ʟᴇꜰᴛ! &7ᴘᴜʀᴄʜᴀsᴇ ᴍᴏʀᴇ ᴏʀ ᴅᴇᴘᴏsɪᴛ ᴍᴏɴᴇʏ."
+  already-claimed: "&cᴛʜɪs ᴄʜᴜɴᴋ ɪs ᴀʟʀᴇᴀᴅʏ ᴄʟᴀɪᴍᴇᴅ ʙʏ &f{town}&c."
+  not-claimed: "&cᴛʜɪs ᴄʜᴜɴᴋ ɪs ɴᴏᴛ ᴄʟᴀɪᴍᴇᴅ ʙʏ ʏᴏᴜʀ ᴛᴏᴡɴ."
+  admin-given: "&a{amount} ᴄʟᴀɪᴍ ʙʟᴏᴄᴋs ɢɪᴠᴇɴ ᴛᴏ &f{player}&a."
+  admin-removed: "&c{amount} ᴄʟᴀɪᴍ ʙʟᴏᴄᴋs ʀᴇᴍᴏᴠᴇᴅ ꜰʀᴏᴍ &f{player}&c."
+
+# ── Protection Messages ──
+protection:
+  no-build: "&cʏᴏᴜ ᴄᴀɴɴᴏᴛ ʙᴜɪʟᴅ ʜᴇʀᴇ! ᴛʜɪs ʟᴀɴᴅ ʙᴇʟᴏɴɢs ᴛᴏ &f{town}&c."
+  no-break: "&cʏᴏᴜ ᴄᴀɴɴᴏᴛ ʙʀᴇᴀᴋ ʙʟᴏᴄᴋs ʜᴇʀᴇ! ᴛʜɪs ʟᴀɴᴅ ʙᴇʟᴏɴɢs ᴛᴏ &f{town}&c."
+  no-interact: "&cʏᴏᴜ ᴄᴀɴɴᴏᴛ ɪɴᴛᴇʀᴀᴄᴛ ʜᴇʀᴇ! ᴛʜɪs ʟᴀɴᴅ ʙᴇʟᴏɴɢs ᴛᴏ &f{town}&c."
+  no-pvp: "&cᴘᴠᴘ ɪs ᴅɪsᴀʙʟᴇᴅ ɪɴ &f{town}&c."
+
+# ── War Messages ──
+war:
+  declared: "&4&l⚔ &c{nation1} &4ʜᴀs ᴅᴇᴄʟᴀʀᴇᴅ ᴡᴀʀ ᴏɴ &c{nation2}&4! &4&l⚔"
+  grace-period: "&e⚠ ᴡᴀʀ ʙᴇɢɪɴs ɪɴ &f{time}&e. ᴘʀᴇᴘᴀʀᴇ ʏᴏᴜʀ ᴅᴇꜰᴇɴsᴇs!"
+  grace-ended: "&4&l⚔ &cᴡᴀʀ ʙᴇᴛᴡᴇᴇɴ &f{nation1} &cᴀɴᴅ &f{nation2} &cʜᴀs ʙᴇɢᴜɴ! &4&l⚔"
+  surrender-offered: "&e☮ &f{nation} &eʜᴀs ᴏꜰꜰᴇʀᴇᴅ ᴛᴏ sᴜʀʀᴇɴᴅᴇʀ."
+  surrender-accepted: "&a☮ ᴘᴇᴀᴄᴇ ᴇsᴛᴀʙʟɪsʜᴇᴅ ʙᴇᴛᴡᴇᴇɴ &f{nation1} &aᴀɴᴅ &f{nation2}&a."
+  reminder: "&c⚠ ᴡᴀʀ ʀᴇᴍɪɴᴅᴇʀ: &f{nation1} &cᴠs &f{nation2} &7(&f{time} &7ʀᴇᴍᴀɪɴɪɴɢ)"
+  already-at-war: "&cʏᴏᴜ ᴀʀᴇ ᴀʟʀᴇᴀᴅʏ ᴀᴛ ᴡᴀʀ ᴡɪᴛʜ &f{nation}&c."
+  not-at-war: "&cʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴛ ᴡᴀʀ ᴡɪᴛʜ &f{nation}&c."
+  neutral-zone: "&e☮ ᴛʜɪs ɪs ᴀ ɴᴇᴜᴛʀᴀʟ ᴢᴏɴᴇ. ᴡᴀʀ ᴀᴄᴛɪᴏɴs ᴀʀᴇ ᴘʀᴏʜɪʙɪᴛᴇᴅ."
+
+# ── Marriage Messages ──
+marriage:
+  proposal-sent: "&d❤ ᴍᴀʀʀɪᴀɢᴇ ᴘʀᴏᴘᴏsᴀʟ sᴇɴᴛ ᴛᴏ &f{player}&d!"
+  proposal-received: "&d❤ &f{player} &dʜᴀs ᴘʀᴏᴘᴏsᴇᴅ! ᴜsᴇ &f/marriage accept &dᴏʀ &f/marriage deny"
+  accepted: "&d❤ &f{player} &dᴀɴᴅ &f{spouse} &dᴀʀᴇ ɴᴏᴡ ᴍᴀʀʀɪᴇᴅ! ❤"
+  denied: "&c{player} ᴅᴇɴɪᴇᴅ ᴛʜᴇ ᴍᴀʀʀɪᴀɢᴇ ᴘʀᴏᴘᴏsᴀʟ."
+  divorced: "&c{player} &cᴀɴᴅ &f{spouse} &cʜᴀᴠᴇ ᴅɪᴠᴏʀᴄᴇᴅ."
+  already-married: "&cʏᴏᴜ ᴀʀᴇ ᴀʟʀᴇᴀᴅʏ ᴍᴀʀʀɪᴇᴅ!"
+  not-married: "&cʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴍᴀʀʀɪᴇᴅ!"
+  no-pending: "&cɴᴏ ᴘᴇɴᴅɪɴɢ ᴘʀᴏᴘᴏsᴀʟ."
+  expired: "&cᴛʜᴇ ᴍᴀʀʀɪᴀɢᴇ ᴘʀᴏᴘᴏsᴀʟ ʜᴀs ᴇxᴘɪʀᴇᴅ."
+  hug: "&d{player} ʜᴜɢɢᴇᴅ {spouse}! ❤"
+  kiss: "&d{player} ᴋɪssᴇᴅ {spouse}! 💋"
+  reproduce-success: "&d{player} &dᴀɴᴅ &f{spouse} &dʜᴀᴅ ᴀ ᴄʜɪʟᴅ! &#44FF44+{amount} ᴄʟᴀɪᴍ ʙʟᴏᴄᴋs!"
+  reproduce-cooldown: "&cʏᴏᴜ ᴍᴜsᴛ ᴡᴀɪᴛ &f{time} &cʙᴇꜰᴏʀᴇ ʀᴇᴘʀᴏᴅᴜᴄɪɴɢ ᴀɢᴀɪɴ."
+  same-gender-denied: "&csᴀᴍᴇ-ɢᴇɴᴅᴇʀ ᴍᴀʀʀɪᴀɢᴇ ɪs ᴅɪsᴀʙʟᴇᴅ ᴏɴ ᴛʜɪs sᴇʀᴠᴇʀ."
+
+# ── Gender Messages ──
+gender:
+  set: "&aʏᴏᴜʀ ɢᴇɴᴅᴇʀ ʜᴀs ʙᴇᴇɴ sᴇᴛ ᴛᴏ &f{gender}&a."
+  invalid: "&cɪɴᴠᴀʟɪᴅ ɢᴇɴᴅᴇʀ. ᴀʟʟᴏᴡᴇᴅ: &f{options}"
+  already-set: "&cʏᴏᴜ ʜᴀᴠᴇ ᴀʟʀᴇᴀᴅʏ sᴇᴛ ʏᴏᴜʀ ɢᴇɴᴅᴇʀ. ᴛʜɪs ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ."
+  must-set: "&cʏᴏᴜ ᴍᴜsᴛ sᴇᴛ ʏᴏᴜʀ ɢᴇɴᴅᴇʀ ꜰɪʀsᴛ ᴡɪᴛʜ &f/gender <choice>&c."
+
+# ── Anvil GUI Messages ──
+anvil:
+  town-create-prompt: "&#AAAAAAᴡʀɪᴛᴇ ᴛᴏᴡɴ ɴᴀᴍᴇ"
+  town-delete-prompt: "&#FF4444ᴛʏᴘᴇ DELETE ᴛᴏ ᴄᴏɴꜰɪʀᴍ"
+  nation-create-prompt: "&#AAAAAAᴡʀɪᴛᴇ ɴᴀᴛɪᴏɴ ɴᴀᴍᴇ"
+  nation-delete-prompt: "&#FF4444ᴛʏᴘᴇ DELETE ᴛᴏ ᴄᴏɴꜰɪʀᴍ"
+  admin-delete-prompt: "&#FF4444ᴛʏᴘᴇ DELETE ᴛᴏ ᴄᴏɴꜰɪʀᴍ"
+  town-rename-prompt: "&#AAAAAAɴᴇᴡ ᴛᴏᴡɴ ɴᴀᴍᴇ"
+  nation-rename-prompt: "&#AAAAAAɴᴇᴡ ɴᴀᴛɪᴏɴ ɴᴀᴍᴇ"
+  name-too-short: "&cɴᴀᴍᴇ ɪs ᴛᴏᴏ sʜᴏʀᴛ! &7(ᴍɪɴ: {min})"
+  name-too-long: "&cɴᴀᴍᴇ ɪs ᴛᴏᴏ ʟᴏɴɢ! &7(ᴍᴀx: {max})"
+  name-blacklisted: "&cᴛʜᴀᴛ ɴᴀᴍᴇ ɪs ʙʟᴀᴄᴋʟɪsᴛᴇᴅ!"
+  name-taken: "&cᴛʜᴀᴛ ɴᴀᴍᴇ ɪs ᴀʟʀᴇᴀᴅʏ ᴛᴀᴋᴇɴ!"
+
+# ── General Error Messages ──
+error:
+  no-permission: "&cʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴ!"
+  not-enough-money: "&cɴᴏᴛ ᴇɴᴏᴜɢʜ ᴍᴏɴᴇʏ! &7(ɴᴇᴇᴅ: ${cost})"
+  already-in-town: "&cʏᴏᴜ ᴀʀᴇ ᴀʟʀᴇᴀᴅʏ ɪɴ ᴀ ᴛᴏᴡɴ!"
+  not-in-town: "&cʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ɪɴ ᴀ ᴛᴏᴡɴ!"
+  not-leader: "&cᴏɴʟʏ ᴛʜᴇ ʟᴇᴀᴅᴇʀ ᴄᴀɴ ᴅᴏ ᴛʜɪs!"
+  not-in-nation: "&cʏᴏᴜʀ ᴛᴏᴡɴ ɪs ɴᴏᴛ ɪɴ ᴀ ɴᴀᴛɪᴏɴ!"
+  player-not-found: "&cᴘʟᴀʏᴇʀ ɴᴏᴛ ꜰᴏᴜɴᴅ!"
+  town-not-found: "&cᴛᴏᴡɴ ɴᴏᴛ ꜰᴏᴜɴᴅ!"
+  nation-not-found: "&cɴᴀᴛɪᴏɴ ɴᴏᴛ ꜰᴏᴜɴᴅ!"
+  wrong-world: "&cʏᴏᴜ ᴄᴀɴ ᴏɴʟʏ ᴅᴏ ᴛʜɪs ɪɴ ᴀʟʟᴏᴡᴇᴅ ᴡᴏʀʟᴅs!"
+  console-only: "&cᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ᴏɴʟʏ ʙᴇ ᴜsᴇᴅ ʙʏ ᴘʟᴀʏᴇʀs."
+  cooldown: "&cᴘʟᴇᴀsᴇ ᴡᴀɪᴛ &f{time} &cʙᴇꜰᴏʀᴇ ᴜsɪɴɢ ᴛʜɪs ᴀɢᴀɪɴ."
+
+# ── Admin Messages ──
+admin:
+  reload: "&aɴᴀᴛɪᴏɴsᴘʟᴜs ʀᴇʟᴏᴀᴅᴇᴅ!"
+  claim-given: "&a{amount} ᴄʟᴀɪᴍ ʙʟᴏᴄᴋs ɢɪᴠᴇɴ ᴛᴏ &f{player}&a."
+  claim-removed: "&c{amount} ᴄʟᴀɪᴍ ʙʟᴏᴄᴋs ʀᴇᴍᴏᴠᴇᴅ ꜰʀᴏᴍ &f{player}&c."
+  force-deleted: "&c&f{name} &cʜᴀs ʙᴇᴇɴ ꜰᴏʀᴄᴇ-ᴅᴇʟᴇᴛᴇᴅ ʙʏ ᴀᴅᴍɪɴ."
+
+# ── Territory Messages ──
+territory:
+  enter-town: "&#FFD700⚑ {town}"
+  enter-wilderness: "&#AAAAAA☁ ᴡɪʟᴅᴇʀɴᴇss"
+  subtitle-town: "&#AAAAAAᴛᴏᴡɴ ᴛᴇʀʀɪᴛᴏʀʏ"
+  subtitle-wilderness: "&#777777ᴜɴᴄʟᴀɪᴍᴇᴅ ᴛᴇʀʀɪᴛᴏʀʏ"
+
+# ── Teleport Messages ──
+teleport:
+  countdown: "&#FFD700ᴛᴇʟᴇᴘᴏʀᴛɪɴɢ ɪɴ &f{time}s&7... ᴅᴏɴ'ᴛ ᴍᴏᴠᴇ!"
+  cancelled: "&cᴛᴇʟᴇᴘᴏʀᴛ ᴄᴀɴᴄᴇʟʟᴇᴅ! ʏᴏᴜ ᴍᴏᴠᴇᴅ."

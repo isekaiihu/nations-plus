@@ -1,0 +1,147 @@
+name: NationsPlus
+version: '${project.version}'
+main: com.isekai.nationsplus.NationsPlus
+api-version: '1.21'
+authors: [ISekai]
+description: Professional-grade Towns & Nations plugin with Dynmap integration
+softdepend: [Vault, dynmap, Towny, PlaceholderAPI]
+load: STARTUP
+
+commands:
+  town:
+    description: Town management commands
+    aliases: [t, nationsplus:town]
+    usage: /<command> <subcommand>
+  nation:
+    description: Nation management commands
+    aliases: [n, nationsplus:nation]
+    usage: /<command> <subcommand>
+  war:
+    description: Declare or manage wars
+    aliases: [nationsplus:war]
+    usage: /<command> <declare|surrender|status> [nation]
+  marry:
+    description: Propose marriage to a player
+    aliases: [nationsplus:marry]
+    usage: /<command> <player>
+  divorce:
+    description: Divorce your spouse
+    aliases: [nationsplus:divorce]
+    usage: /<command> [player]
+  marriage:
+    description: Marriage management
+    aliases: [nationsplus:marriage]
+    usage: /<command> <accept|deny|info>
+  gender:
+    description: Set your gender
+    aliases: [nationsplus:gender]
+    usage: /<command> <male|female|other|prefer-not>
+  hug:
+    description: Hug your spouse
+    usage: /<command>
+  kiss:
+    description: Kiss your spouse
+    usage: /<command>
+  reproduce:
+    description: Reproduce with your spouse
+    usage: /<command>
+  earthadmin:
+    description: Open the admin management GUI
+    aliases: [ea, nationsplus:earthadmin]
+    usage: /<command>
+    permission: nationsplus.admin
+  tnc:
+    description: NationsPlus admin commands
+    aliases: [nationsplus:tnc]
+    usage: /<command> reload
+    permission: nationsplus.admin
+  claim:
+    description: Claim management
+    aliases: [nationsplus:claim]
+    usage: /<command> <give|remove> <player> <amount>
+    permission: nationsplus.admin.claims
+  migrate:
+    description: Migrate data from another plugin
+    aliases: [nationsplus:migrate]
+    usage: /<command> <plugin>
+    permission: nationsplus.admin
+
+permissions:
+  nationsplus.admin:
+    description: Full admin access
+    default: op
+  nationsplus.admin.claims:
+    description: Manage claim blocks
+    default: op
+  nationsplus.town.create:
+    description: Create a town
+    default: true
+  nationsplus.town.delete:
+    description: Delete your town
+    default: true
+  nationsplus.town.gui:
+    description: Open town GUI
+    default: true
+  nationsplus.town.invite:
+    description: Invite players to town
+    default: true
+  nationsplus.town.kick:
+    description: Kick players from town
+    default: true
+  nationsplus.town.claim:
+    description: Claim chunks for town
+    default: true
+  nationsplus.town.spawn:
+    description: Teleport to town spawn
+    default: true
+  nationsplus.town.setspawn:
+    description: Set town spawn
+    default: true
+  nationsplus.town.bank:
+    description: Use town bank
+    default: true
+  nationsplus.town.settings:
+    description: Manage town settings/laws
+    default: true
+  nationsplus.nation.create:
+    description: Create a nation
+    default: true
+  nationsplus.nation.delete:
+    description: Delete your nation
+    default: true
+  nationsplus.nation.gui:
+    description: Open nation GUI
+    default: true
+  nationsplus.nation.invite:
+    description: Invite towns to nation
+    default: true
+  nationsplus.nation.kick:
+    description: Kick towns from nation
+    default: true
+  nationsplus.nation.spawn:
+    description: Teleport to nation spawn
+    default: true
+  nationsplus.nation.setspawn:
+    description: Set nation spawn
+    default: true
+  nationsplus.war.declare:
+    description: Declare war
+    default: true
+  nationsplus.war.surrender:
+    description: Surrender in war
+    default: true
+  nationsplus.marry:
+    description: Marriage commands
+    default: true
+  nationsplus.gender:
+    description: Set gender
+    default: true
+  nationsplus.spouse.hug:
+    description: Hug spouse
+    default: true
+  nationsplus.spouse.kiss:
+    description: Kiss spouse
+    default: true
+  nationsplus.spouse.reproduce:
+    description: Reproduce with spouse
+    default: true
